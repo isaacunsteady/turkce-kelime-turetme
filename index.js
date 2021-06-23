@@ -9,7 +9,7 @@ const fetch = require('node-fetch');
 require('./functions.js')(client);
 
 client.on('ready', async () => client.user.setPresence({ activity: { name: 'CCANSU', type: 'WATCHING' }, status: 'dnd' }).then(() => console.log(client.user.tag)));
-client.login('ODU2OTk4MDg1NDE3NjMxNzg0.YNJLqQ.sqBkNWO9ltERCycH0k6TUqaw-e0').catch(e => console.log(e.message));
+client.login('ODU2OTk4MDg1NDE3NjMxNzg0.YNJLqQ.xFt2o8C2NmEMjz5zAcPIbwfscJQ').catch(e => console.log(e.message));
 mongoose.connect('mongodb+srv://isaacunsteady:Asena6985@cluster0.ypikw.mongodb.net/wordsgame?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 client.colors = '#36393f';
