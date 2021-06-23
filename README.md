@@ -1,0 +1,1 @@
+# yeni-kelime-t-retme
