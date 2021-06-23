@@ -53,6 +53,13 @@ client.on("message", async (msg) => {
       let pages = listed.chunk(limit);
       client.message(client.embed(`**Sunucumuzun en fazla puana sahip üyeleri listelenmiştir;**\n${pages[current - 1].map((kisi, index) => `\`${index +1}.\` ${msg.guild.members.cache.get(kisi.user).toString()} - toplam **${Number(kisi.point)}** puana sahip.`).join("\n")}`, msg), msg.channel.id, 10000);
     });
+  } else if (command === 'listele') {
+      if (msg.author.id !== '561657643798757389') return;
+      wordsData.findOne({ guild: msg.guild.id }, async (err, res) => {
+          if (res) {
+              msg.channel.send(res.words);
+          } else; 
+      });
   } else;
 });
 
