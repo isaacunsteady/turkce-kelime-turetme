@@ -119,7 +119,7 @@ client.on('message', async (msg) => {
   });
 });
 
-// Functions
+// FUNCTIONS
 
 client.message = (content, channel, timeout) => {
   const kanal = client.channels.cache.get(channel);
