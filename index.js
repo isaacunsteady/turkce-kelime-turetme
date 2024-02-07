@@ -1,5 +1,6 @@
-const { Client } = require('discord.js');
-require('discord-reply');
+
+Client;
+// xxxx reply
 const client = new Client();
 const mongoose = require('mongoose');
 const wordsData = require('./Schemas/words.js');
